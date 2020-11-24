@@ -1,0 +1,219 @@
+/* Ticker Styling */
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+           src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+           src : url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0") format("embedded-opentype"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0") format("woff2"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0") format("woff"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0") format("truetype"),
+                 url("http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular") format("svg");
+}
+.ticker-wrapper.has-js {
+	/* margin: 20px 0px 20px 0px; */
+	/* padding: 0px 20px; */
+	width: 780px;
+	height: 32px;
+	display: block;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	/* background-color: #f8f0db; */
+	font-size: 0.75em;
+}
+.ticker {
+	width: 710px;
+	height: 23px;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	/* background-color: #f8f0db; */
+}
+.ticker-title {
+	display : none !important;
+	padding-top: 9px;
+	color: #990000;
+	font-weight: bold;
+	/* background-color: #f8f0db; */
+	text-transform: uppercase;
+}
+.ticker-content {
+	margin: 0px;
+	padding-top: 9px;
+	position: absolute;
+	color: #000;
+	font-weight: bold;
+	/* background-color: #f8f0db; */
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1.2em;
+}
+.ticker-content:focus {
+	display  :none;
+}
+.ticker-content a {
+	text-decoration: none;	
+	color: #000;
+}
+.ticker-content a:hover {
+	/* text-decoration: underline;	 */
+	color: #0D3059;
+}
+.ticker-swipe {
+	padding-top: 9px;
+	position: absolute;
+	top: 0px;
+	background-color: #fff;
+	display: block;
+	width: 300px;
+	height: 23px; 
+}
+.ticker-swipe span {
+	margin-left: 1px;
+	background-color: #ffff;
+	border-bottom: 1px solid #1F527B;
+	height: 12px;
+	width: 7px;
+	display: block;
+}
+.ticker-controls {
+	/* padding: 8px 0px 0px 0px; */
+	list-style-type: none;
+	float: left;
+}
+#date:before {
+	content: "\f017";
+	 font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  padding : 0 5px
+}
+.ticker-controls li {
+	padding: 0px;
+	margin-left: 5px;
+	float: left;
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	display: block;
+}
+/* .ticker-controls li.jnt-play-pause {
+	background-image: url('../images/controls.png');
+	background-position: 32px 16px;
+}
+.ticker-controls li.jnt-play-pause.over {
+	background-position: 32px 32px;
+}
+.ticker-controls li.jnt-play-pause.down {
+	background-position: 32px 0px;
+}
+.ticker-controls li.jnt-play-pause.paused {
+	background-image: url('../images/controls.png');	
+	background-position: 48px 16px;
+}
+.ticker-controls li.jnt-play-pause.paused.over {
+	background-position: 48px 32px;
+}
+.ticker-controls li.jnt-play-pause.paused.down {
+	background-position: 48px 0px;
+} */
+.ticker-controls li.jnt-prev {
+	/* background-image: url('../images/controls.png');
+	*/ 
+	background-position: 0px 16px;
+	margin: 6px 7px 6px 0;
+	    padding: 0px;
+    margin: 6px 0 6px 7px;
+    float: left;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    display: block;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.ticker-controls li.jnt-prev ::after {
+
+    line-height: 21px;
+    opacity: 0.8;
+    display: inline-block;
+    content: "\f104";
+	font-family: "Fontawesome";
+	color : #000;
+}
+.ticker-controls li.jnt-prev.over {
+	/* background-position: 0px 32px;		 */
+}
+.ticker-controls li.jnt-prev.down {
+	/* background-position: 0px 0px;		 */
+}
+.ticker-controls li.jnt-next {
+    float: right;
+    margin: 6px 7px 6px 0;
+    padding: 0px;
+    margin: 6px 0 6px 7px;
+    float: left;
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    display: block;
+    line-height: 21px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.ticker-controls li.jnt-next:hover, .ticker-controls li.jnt-next:hover ::after, .ticker-controls li.jnt-prev:hover, .ticker-controls li.jnt-prev:hover ::after {
+background: #0088ff;
+color : #fff
+}
+.ticker-controls li.jnt-next ::after{
+	    content: "\f105";
+
+    line-height: 21px;
+    opacity: 0.8;
+    display: inline-block;
+	font-family: "Fontawesome";
+		color : #000;
+
+}
+.ticker-controls li.jnt-next.over {
+	/* background-position: 16px 32px;	 */
+}
+.ticker-controls li.jnt-next.down {	
+	/* background-position: 16px 0px;	 */
+}
+.js-hidden {
+	display: none;
+}
+.no-js-news {
+	padding: 10px 0px 0px 45px; 
+	color: #F8F0DB;
+}
+.left .ticker-swipe {
+	/*left: 80px;*/
+}
+.left .ticker-controls, .left .ticker-content, .left .ticker-title, .left .ticker {
+    float: left;
+}
+.left .ticker-controls {
+    padding-left: 6px;
+}
+.right .ticker-swipe {
+	/*right: 80px;*/
+}
+.right .ticker-controls, .right .ticker-content, .right .ticker-title, .right .ticker {
+    float: right;
+}
+.ticker-controls{
+	float : left !important;
+	margin : 0 -10px;
+	    padding-left: 10px;
+}
+.right .ticker-controls {
+    padding-right: 6px;
+}

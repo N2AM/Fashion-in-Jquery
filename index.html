@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" style="direction : rtl">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css
+
+"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+      integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+
+    <link href="css/ticker-style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/slider-bar.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div
+              id="date"
+              class="col-lg-2 col-md-12 col-sm-12 col-12 col-sm-12 col-12 d-flex"
+            ></div>
+            <div class="col-lg-9 col-md-12 col-sm-12 col-12 d-flex p-0">
+              <span class="span-title">
+                <span class="fa fa-bolt" aria-hidden="true"></span>
+                <span class="span-text">مختارات</span>
+              </span>
+              <ul id="js-news" class="js-hidden">
+                <li class="news-item">
+                  <a href="#">إطلاله جديدة لموسم الصيف خصم حتى 70 %</a>
+                </li>
+                <li class="news-item">
+                  <a href="#">موسم جديد بألوان نابضة بالحياة خصم حتى 80 %</a>
+                </li>
+                <li class="news-item">
+                  <a href="#">ملحقات السيارة خصم حتى 70 %</a>
+                </li>
+                <li class="news-item">
+                  <a href="#"
+                    >الأفضل مبيعا من القطع الرجالية من 12.99 - 0.99 $
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-1 col-md-12 col-sm-12 col-12 p-0">
+              <ul class="d-flex icons-div">
+                <li><i class="fas fa-bars"></i></li>
+                <li><i class="fas fa-shopping-cart"></i></li>
+                <li><i class="fas fa-sign-in-alt"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div id="logo" class="container">
+        <img src="images/logo.png" />
+      </div>
+      <div id="main-nav" class="container">
+        <div class="row">
+          <div id="menu" class="container">
+            <div class="row">
+              <ul class="d-flex col-lg-9 col-md-12 col-sm-12 col-12">
+                <li>وصلنا حديثا</li>
+                <li>نساء</li>
+                <li>رجالي</li>
+                <li>الجمال</li>
+                <li>الأم و الطفل</li>
+                <li>اليكترونيات</li>
+                <li>منزل و ديكور</li>
+                <li>رياضة</li>
+                <li>سوبر ماركت</li>
+                <li>تخفيضات</li>
+                <li>سفر</li>
+              </ul>
+              <div class="col-md-3 col-sm-12 col-12">
+                <div class="d-flex">
+                  <input type="text" placeholder="بحث عن ...." />
+                  <i class=" fa fa-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container pt-4 slider">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="images/istock-506442302__large.jpg"
+              alt="First slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/istock-463173435.jpg"
+              alt="Second slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="images/Shopping-3.jpg"
+              alt="Third slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="container pt-3 pl-0 pr-0">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-12">
+          الإرجاع مجاناً خلال 15 يوم من إستلام الطلب
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12 d-flex  justify-content-end">
+          <a
+            rel="nofollow"
+            href="https://ar.jollychic.com/downloads?SPM=PC.HOME.X"
+            class="notice-icon notice-rt"
+            >حمل تطبيق Jollychic</a
+          >
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-3 pb-2 mt-3 bg-c text-center">
+      <h2 class="pt-3 d-flex text-center">
+        عروض سريعه بخصم حتى 80% <span> ستنتهي في </span>
+        <span
+          ><ul id="count-down" class="flex-row-reverse d-flex">
+            <li id="day"></li>
+            :
+            <li id="hour"></li>
+            :
+            <li id="min"></li>
+            :
+            <li id="sec"></li></ul
+        ></span>
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="product">
+              <img src="images/Shopping-3.jpg" />
+              <span class="percent-show">70%</span>
+            </div>
+            <div class="price d-flex">
+              <span>1000 EPG</span>
+              <del>1500 EPG</del>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product">
+              <img src="images/Shopping-3.jpg" />
+              <span class="percent-show">80%</span>
+            </div>
+            <div class="price d-flex">
+              <span>1000 EPG</span>
+              <del>1500 EPG</del>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product">
+              <img src="images/Shopping-3.jpg" />
+              <span class="percent-show">50%</span>
+            </div>
+            <div class="price d-flex">
+              <span>1000 EPG</span>
+              <del>1500 EPG</del>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product">
+              <img src="images/Shopping-3.jpg" />
+              <span class="percent-show">30%</span>
+            </div>
+            <div class="price d-flex">
+              <span>1000 EPG</span>
+              <del>1500 EPG</del>
+            </div>
+          </div>
+          <div class="col">
+            <div class="product">
+              <img src="images/Shopping-3.jpg" />
+              <span class="percent-show">20%</span>
+            </div>
+            <div class="price d-flex">
+              <span>1000 EPG</span>
+              <del>1500 EPG</del>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center pt-5 sections">
+      <h3 class="pb-5">أقسام مختارة</h3>
+      <span class="under-line"></span>
+      <div class="row">
+        <div class="col-md-4 col-sm-12 col-12">
+          <img
+            src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041650463635.jpg"
+          />
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12 col-12 col-sm-12 col-12">
+          <div class="row">
+            <img
+              src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041650467288.jpg"
+            />
+          </div>
+          <div class="row">
+            <img
+              src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041650463370.jpg"
+            />
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <img
+            src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041650467538.jpg"
+          />
+        </div>
+        <div class="col-lg-2 col-md-12 col-sm-12 col-12 col-sm-12 col-12">
+          <div class="row">
+            <img
+              src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041650463001.jpg"
+              alt=""
+            />
+          </div>
+          <div class="row">
+            <img
+              src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041650467514.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-md-4 col-sm-12 col-12">
+          <img
+            src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041724475300.jpg"
+          />
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <img
+            src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041724348541.jpg"
+          />
+        </div>
+        <div class="col-md-4 col-sm-12 col-12">
+          <img
+            src="https://imcut.jollychic.com/uploads/jollyimg/imageMaterialLib/201904/04/IL201904041724448417.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-rocket"></i>
+    </button>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+      integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-1.8.0.js"
+      integrity="sha256-00Fh8tkPAe+EmVaHFpD+HovxWk7b97qwqVi7nLvjdgs="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.ticker.js" type="text/javascript"></script>
+
+    <!-- <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script> -->
+    <script src="js/slider-bar.js" async defer></script>
+  </body>
+</html>
